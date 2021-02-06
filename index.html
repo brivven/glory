@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tips</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="rt.css">
+</head>
+<body>
+	<div class="containr">
+		<h1> Your Tip calculator </h1>
+		<div class="calcul">
+			<p>How much was your bill?</p>
+			<input id="billinpt" type="text" placeholder="Bill Amount">
+			<p>How was your service? (aka:tip amount)</p>
+			<!--select fiha bzaf elements bsah same tag wich is option tsma id w class = same thing here-->
+			<select id="tipamount" >
+				<!--disabeled =this option mt9drsh clicki 3lih shghol 3onwan, ,disabled selected value=0 howa ywli yban header t3 select-->
+			    <!--&#37; &#45;=> % and - t9dr tktbhom direct, bsah f job test wla exam hado khir ybyno bli t3rf -->
+				<option disabled selected value="0" > -- Choose An Option Below -- </option>
+				<option id="tipamount" value="0.4">40&#37; &#45; [Outstanding]</option>
+				<option value="0.3">30% - [Pretty good]</option>
+				<option value="0.10">10% - [Nice]</option>
+				<option value="0.05">5% - [Not bad]</option>
+			</select>
+			<p>How many people are sharing this bill?</p>
+			<input id="pplinpt" type="text" placeholder="people N°"><br>
+			<input  id="clcbtn" type="button" value="Calculate" onclick="tipcalculator()"><hr>
+			<div id="tiprslt">
+				<!--sup= yban fl upper part of line,,, span =lkelma,, small= yban lta7t f line-->
+			<span id="result">0.00</span><sup>$</sup><small id="each">each</small>
+			</div>
+		</div>
+	</div>
+
+	<!--ki matst3mlsh onclick w lokhrin events js diro hna -->
+	<script type="text/javascript" src="rt.js"></script>
+
+</body>
+</html>
